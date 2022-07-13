@@ -1,9 +1,10 @@
 
 
-/*for(let i = 1 ; i < 10 ; i++){
+
 
     let nombre = prompt("Ingrese su nombre");
-    alert("Bienvenido a mi página " + nombre);
+    let apellido = prompt("Ingrese su apellido")
+    alert("Bienvenido a mi página " + nombre + "" + apellido);
 
 
     let edad = parseInt(prompt("ingrese su edad:"));
@@ -14,38 +15,27 @@
     alert("No sos mayor de edad!");
 }
 
-    let dniIngresado = prompt("Ingrese su DNI:");
+let dniIngresado = prompt("Ingrese su DNI:");
 
-    alert("DNI " + dniIngresado + "." + "\nSu entrada es la N:" + i);
+for(let i = 1 ; i < 10 ; i++){
+    alert("\nSu entrada es la N:" + i);
+}
+
+
+let mail = prompt("Ingrese su mail");
+//Repetimos con While hasta que el usuario ingresa "ESC"
+while(mail != "ESC" ){
+    alert("El usuario ingresó "+ mail);
+    //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
+    mail = prompt("Ingresar otro mail si tiene");
     alert("Gracias por su visita")
     break;
+}
+
+
+
+/*let i = 0;       // el inicializador
+while (i <= 20) { // la condición
+  console.log("El numero es " + i);
+  i = i + 2;      // el incrementador
 }*/
-
-
-let usuario = "bucleAdmin";
-let pass = "programacionFacil";
-let introduceUsuario;
-let introducePass;
-
-introduceUsuario = prompt("Introduce el nombre de un usuario autorizado para ejecutar el bucle.");
-introducePass = prompt("Introduce una contraseña.");
-
-if (introduceUsuario != usuario || introducePass != pass) {
-	alert("Error. Usuario y/o contraseña no válidos.");
-}
-
-else {
-alert("El bucle va a comenzar.");
-
-for(i=10;i>=-19;i--){
-	if (i == 0) {
-		continue;
-	}
-	document.write("El valor del bucle es: " + i + "<br>");
-	if (i == -10) {
-		break;
-	}
-}
-
-document.write("El bucle ha finalizado.");
-}
